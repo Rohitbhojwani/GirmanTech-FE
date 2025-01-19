@@ -1,0 +1,233 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ubuntu:wght@300&display=swap');
+
+.nav-container{
+    height: 110px;
+    box-shadow: 0px 1.41px 8.43px 0px #00000040;
+    font-family: "Poppins", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: white;
+}
+
+.nav-subcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 160px;
+}
+
+.nav-logo{
+    display: flex;
+}
+
+.nav-logo img{
+    height: 70px;
+    width: 70px;
+    margin-top: auto;
+}
+
+.nav-logo-text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.5rem;
+}
+
+.nav-logo-text span:nth-child(1){
+    font-size: 37px;
+    font-weight: 700;
+}
+
+.nav-logo-text span:nth-child(2){
+    font-size: 11px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+.nav-links ul{
+    list-style: none;
+    display: flex;
+    font-family: "Inter", serif;
+    font-weight: 400;
+    gap: 40px;
+}
+
+.nav-links ul li:nth-child(1){
+    color: #3063E6;
+    font-weight: 700;
+    text-decoration-style: solid;
+    text-decoration: underline;
+    text-decoration-skip-ink: False;
+} */
+
+/* new css */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ubuntu:wght@300&display=swap');
+
+/* Desktop Styles */
+.nav-container{
+    height: 110px;
+    box-shadow: 0px 1.41px 8.43px 0px #00000040;
+    font-family: "Poppins", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: white;
+}
+
+.nav-subcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 160px;
+}
+
+.nav-logo{
+    display: flex;
+}
+
+.nav-logo img{
+    height: 70px;
+    width: 70px;
+    margin-top: auto;
+}
+
+.nav-logo-text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.5rem;
+}
+
+.nav-logo-text span:nth-child(1){
+    font-size: 37px;
+    font-weight: 700;
+}
+
+.nav-logo-text span:nth-child(2){
+    font-size: 11px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+.nav-links ul{
+    list-style: none;
+    display: flex;
+    font-family: "Inter", serif;
+    font-weight: 400;
+    gap: 40px;
+}
+
+.nav-links ul li:nth-child(1){
+    color: #3063E6;
+    font-weight: 700;
+    text-decoration-style: solid;
+    text-decoration: underline;
+    text-decoration-skip-ink: False;
+}
+
+/* Mobile Styles */
+
+/* Hamburger menu styles for mobile */
+.nav-hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.hamburger-line {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    border-radius: 2px;
+}
+
+/* Dropdown menu for mobile */
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links ul {
+    display: flex;
+}
+
+/* Mobile-specific dropdown */
+.nav-links.active {
+    display: none; /* Initially hidden */
+    position: absolute;
+    top: 90px; /* Adjust based on navbar height */
+    right: 20px;
+    background-color: white;
+    box-shadow: 0px 1.41px 8.43px 0px #00000040;
+    flex-direction: column;
+    width: 160px;
+    padding: 5px;
+    border-radius: 5px;
+    animation: dropdownFadeIn 0.3s ease-in-out;
+}
+
+.nav-links.active ul {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.nav-links.active ul li {
+    margin: 5px 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Mobile view styles */
+@media (max-width: 768px) {
+    .nav-subcontainer {
+        justify-content: space-around;
+    }
+
+    .nav-logo img{
+        height: 40px;
+        width: 40px;
+        margin-top: auto;
+    }
+
+    .nav-logo-text span:nth-child(1){
+        font-size: 25px;
+        font-weight: 700;
+    }
+    
+    .nav-logo-text span:nth-child(2){
+        font-size: 6px;
+        font-weight: 600;
+        text-align: center;
+        letter-spacing: 4px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-links.active {
+        display: flex; /* Show dropdown on toggle */
+    }
+
+    .nav-hamburger {
+        display: flex; /* Show hamburger menu */
+    }
+}
+
+/* Dropdown fade-in animation */
+@keyframes dropdownFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

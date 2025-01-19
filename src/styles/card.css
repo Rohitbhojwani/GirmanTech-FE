@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ubuntu:wght@300&display=swap');
+
+.card-heading{
+    display: flex;
+    flex-direction: column;
+    font-family: "Inter", serif;
+}
+
+.card-heading img{
+    height: 70px;
+    width: 70px;
+}
+
+.card-heading > span{
+    font-family: "Inter", serif;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.card-location{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.card-location img{
+    height: 18px;
+    width: 18px;
+}
+
+.card-footer{
+    display: flex;
+    gap: 40px;
+}
+
+.left-footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.left-footer-number{
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.left-footer-number > img{
+    height: 15px;
+    width: 15px;
+}
+
+.left-footer-number > span{
+    font-weight: 600;
+}
+
+.left-footer-text > span{
+    color: #AFAFAF;
+}
+
+.right-footer button{
+    padding: 7px 10px;
+    border-radius: 9px;
+    opacity: 0px;
+    background-color: #18181B;
+    color: white;
+}
+
+.dialog-container{
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+}
+
+.dialog-container img{
+    height: 200px;
+    width: 200px;
+}
+
+.dialog-container span:nth-child(1){
+    font-family: "Inter",sans-serif;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.dialog-container span:nth-child(2){
+    color: #71717A;
+    font-weight: 400;
+}
