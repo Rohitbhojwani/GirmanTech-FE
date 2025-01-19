@@ -23,7 +23,7 @@ const Search = () => {
       setError(false);
 
       try {
-        const response = await fetch(`https://girman-backend.vercel.app/api/people/search?query=${query}`);
+        const response = await fetch(`https://girman-tech-be-seven.vercel.app/api/people/search?query=${query}`);
         const data = await response.json();
 
         if (response.ok && data.success && data.data.length > 0) {
